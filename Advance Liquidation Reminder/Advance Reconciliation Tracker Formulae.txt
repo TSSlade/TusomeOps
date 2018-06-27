@@ -1,0 +1,22 @@
+	
+	CONCATENATE([name_last],LEFT([@[name_first]],1),LEFT([@[name_other]],1))
+	
+	COUNTIF(tbl_interface[user id],[@[user_id]])
+	
+	{IFERROR(INDEX(tbl_interface[Advance ID],SMALL(IF(tbl_interface[user id]=[@[user_id]],ROW(tbl_interface[user id])-ROW(INDEX(tbl_interface[user id],1,1))+1),[@[advances issued]])),"")}
+	
+	IFERROR(INDEX(tbl_interface[[Advance ID]:[Liquidation Status]],MATCH([@[current advance]],tbl_interface[Advance ID],0),14),"")
+	
+	COUNTIFS(tbl_interface[user id],[@[user_id]],tbl_interface[Liquidation Status],"Outstanding")
+	
+	IFERROR(IF(AND(ISERROR(MATCH([@[user_id]],tbl_interface[user id],0)),[@[current advance]]=""),1,IF(AND(MATCH([@[user_id]],tbl_interface[user id],0)<>0,VLOOKUP([@[current advance]],tbl_interface[[Advance ID]:[Liquidation Status]],14,FALSE)="Liquidated"),1,0)),"")
+	
+	IF([@[eligibility status]]=1,[@[user_id]],"")
+	
+	IF([@[eligible requestors]]="","",COUNTIF([eligible requestors],">="&[@[eligible requestors]]))
+	
+	IFERROR(INDEX(tbl_staff[eligible requestors],MATCH(ROW()-ROW($A$6),tbl_staff[eligibility ID],0)),"")
+	
+	OFFSET(tbl_dyn_eligible,1,0,MAX(tbl_staff[eligibility ID]),1)
+	
+	INDEX(tbl_staff[[name_first]:[user_id]],MATCH(interface!$B24,tbl_staff[name_last],0),2)

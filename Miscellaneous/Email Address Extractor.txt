@@ -1,0 +1,24 @@
+Sub GetALLEmailAddresses() 
+Dim objFolder As MAPIFolder
+Dim strEmail As String
+Dim strEmails As String
+Dim objDic As Object
+Dim objItem As Object
+Dim objFSO As Object
+Dim objTF As Object
+
+Set objDic = CreateObject("scripting.dictionary")
+Set objFSO = CreateObject("scripting.filesystemobject")
+Set objTF = objFSO.createtextfile("C:\emails.csv", 2)
+Set objFolder = Application.GetNamespace("Mapi").GetDefaultFolder(olFolderInbox)
+For Each objItem In objFolder.Items
+    If objItem.Class = olMail Then
+        strEmail = objItem.SenderEmailAddress
+        If Not objDic.Exists(strEmail) Then
+            objTF.writeline strEmail
+            objDic.Add strEmail, ""
+        End If
+    End If
+Next
+objTF.Close
+End Sub

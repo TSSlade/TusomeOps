@@ -1,0 +1,168 @@
+------------------------------------------------------------------------------------------------------------------------------
+
+Would you like to [m]anually enter filenames, or would you prefer to let this run in [a]utomated mode?
+	 >>: 
+------------------------------------------------------------------------------------------------------------------------------
+
+Would you like the routine to [p]rint out the specs for each book as it goes, or would you prefer to let this run [s]ilently?
+	 >>: 
+------------------------------------------------------------------------------------------------------------------------------
+
+Please provide the directory in which your files are stored
+	 >>: 
+------------------------------------------------------------------------------------------------------------------------------
+
+Which file would you like to process at this time?:
+	 >>: 
+------------------------------------------------------------------------------------------------------------------------------
+
+This function will run on the following files:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 1]	test.txt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please [c]onfirm the list is accurate. If there are any files you want to [r]emove from the list, now is the time.
+	 >>: 
+
+Thank you. We'll proceed. 
+
+The file being examined is test.txt
+{'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+This file will be read using ascii encoding
+******************************************************************************************************************************
+The filename test.txt is malformed; the file will be skipped.
+
+
+******************************************************************************************************************************
+Analysis of the following stories has been completed: 
+[ 1]	test.txt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Would you like to [c]ontinue with a new story, or
+would you like to [f]inish and export your analyses?
+	 >>: 
+------------------------------------------------------------------------------------------------------------------------------
+
+Would you like to [m]anually enter filenames, or would you prefer to let this run in [a]utomated mode?
+	 >>: 
+------------------------------------------------------------------------------------------------------------------------------
+
+Would you like the routine to [p]rint out the specs for each book as it goes, or would you prefer to let this run [s]ilently?
+	 >>: 
+------------------------------------------------------------------------------------------------------------------------------
+
+Please provide the directory in which your files are stored
+	 >>: 
+------------------------------------------------------------------------------------------------------------------------------
+
+Which file would you like to process at this time?:
+	 >>: 
+------------------------------------------------------------------------------------------------------------------------------
+
+This function will run on the following files:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 1]	test-1-2-3-5-6.txt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please [c]onfirm the list is accurate. If there are any files you want to [r]emove from the list, now is the time.
+	 >>: 
+
+Thank you. We'll proceed. 
+
+The file being examined is test-1-2-3-5-6.txt
+{'encoding': 'ascii', 'confidence': 1.0, 'language': ''}
+This file will be read using ascii encoding
+------------------------------------------------------------------------------------------------------------------------------
+Analyzing test-1-2-3-5-6.txt.
+
+	As of page 1, new word ct is 0...
+	Page 1's 0 total words included 0 new words: ([])
+		TTR is now 9999.00 (from 0 / 0)
+	As of page 2, new word ct is 0...
+	Page 2's 2 total words included 2 new words: (['argwings', 'otieno'])
+		TTR is now 1.00 (from 2 / 2)
+	As of page 3, new word ct is 0...
+	Page 3's 22 total words included 17 new words: (['didi', 'was', 'very', 'happy', 'he', 'going', 'to', 'visit', 'his', 'aunt', 'with', 'mother', 'they', 'were', 'travelling', 'by', 'bus'])
+		TTR is now 0.79 (from 19 / 24)
+	As of page 4, new word ct is 0...
+	Page 4's 0 total words included 0 new words: ([])
+		TTR is now 0.79 (from 19 / 24)
+	As of page 5, new word ct is 0...
+	Page 5's 15 total words included 9 new words: (['vrooooooom', 'the', 'moving', 'sat', 'next', 'window', 'saw', 'many', 'things'])
+		TTR is now 0.72 (from 28 / 39)
+	As of page 6, new word ct is 0...
+	Page 6's 0 total words included 0 new words: ([])
+		TTR is now 0.72 (from 28 / 39)
+	As of page 7, new word ct is 0...
+	Page 7's 15 total words included 0 new words: ([])
+		TTR is now 0.52 (from 28 / 54)
+	As of page 8, new word ct is 0...
+	Page 8's 22 total words included 8 new words: (['and', 'got', 'off', 'walked', 'along', 'road', 'near', 'shops'])
+		TTR is now 0.47 (from 36 / 76)
+	As of page 9, new word ct is 0...
+	Page 9's 26 total words included 7 new words: (['knock', 'aunty', 'tutu', 'opened', 'door', 'she', 'see'])
+		TTR is now 0.42 (from 43 / 102)
+	As of page 10, new word ct is 0...
+	Page 10's 18 total words included 6 new words: (['her', 'sister', 'drank', 'orange', 'juice', 'loved'])
+		TTR is now 0.41 (from 49 / 120)
+	As of page 11, new word ct is 0...
+	Page 11's 21 total words included 6 new words: (['down', 'talk', 'each', 'other', 'talked', 'laughed'])
+		TTR is now 0.39 (from 55 / 141)
+	As of page 12, new word ct is 0...
+	Page 12's 17 total words included 6 new words: (['kitchen', 'a', 'garden', 'had', 'grew', 'vegetables'])
+		TTR is now 0.39 (from 61 / 158)
+	As of page 13, new word ct is 0...
+	Page 13's 20 total words included 9 new words: (['there', 'five', 'goats', 'in', 'ate', 'bad', 'go', 'away', 'you'])
+		TTR is now 0.39 (from 70 / 178)
+	As of page 14, new word ct is 0...
+	Page 14's 38 total words included 11 new words: (['did', 'not', 'ran', 'after', 'cried', 'baaaaaaa', 'followed', 'stick', 'hand', 'wanted', 'far'])
+		TTR is now 0.38 (from 81 / 216)
+	As of page 15, new word ct is 0...
+	Page 15's 0 total words included 0 new words: ([])
+		TTR is now 0.38 (from 81 / 216)
+	As of page 16, new word ct is 0...
+	Page 16's 17 total words included 3 new words: (['sshh', 'baaaaa', 'went'])
+		TTR is now 0.36 (from 84 / 233)
+	As of page 17, new word ct is 0...
+	Page 17's 21 total words included 3 new words: (['from', 'would', 'eat'])
+		TTR is now 0.34 (from 87 / 254)
+	As of page 18, new word ct is 0...
+	Page 18's 0 total words included 0 new words: ([])
+		TTR is now 0.34 (from 87 / 254)
+	As of page 19, new word ct is 0...
+	Page 19's 24 total words included 13 new words: (['questions', 'who', 'visiting', 'travelled', "didi's", 'called', 'tell', 'story', 'of', 'how', 'spent', 'your', 'holiday'])
+		TTR is now 0.36 (from 100 / 278)
+
+Analysis of '' by Didi And The Goats completed.
+It is expected to be a Level G book with 19 pages and an overall type-token ratio of 0.36
+This is derived from a total word count of 278 with the following 100 unique words: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+[ 1] argwings       otieno         didi           was            very           happy          he             going          +
+[ 2] to             visit          his            aunt           with           mother         they           were           +
+[ 3] travelling     by             bus            vrooooooom     the            moving         sat            next           +
+[ 4] window         saw            many           things         and            got            off            walked         +
+[ 5] along          road           near           shops          knock          aunty          tutu           opened         +
+[ 6] door           she            see            her            sister         drank          orange         juice          +
+[ 7] loved          down           talk           each           other          talked         laughed        kitchen        +
+[ 8] a              garden         had            grew           vegetables     there          five           goats          +
+[ 9] in             ate            bad            go             away           you            did            not            +
+[10] ran            after          cried          baaaaaaa       followed       stick          hand           wanted         +
+[11] far            sshh           baaaaa         went           from           would          eat            questions      +
+[12] who            visiting       travelled      didi's         called         tell           story          of             +
+[13] how            spent          your           holiday        
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Analysis of the following stories has been completed: 
+[ 1]	test-1-2-3-5-6.txt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Would you like to [c]ontinue with a new story, or
+would you like to [f]inish and export your analyses?
+	 >>: 
+Thank you for using Type-Token Calculator. Good-bye.
