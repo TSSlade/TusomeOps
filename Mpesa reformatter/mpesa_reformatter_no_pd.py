@@ -92,10 +92,13 @@ def get_dir_and_file(stage):
     try:
         active_dir = re.sub(backslash, "/", active_dir)
         os.chdir(active_dir)
-        file_list = [f for f in
-                 os.listdir(active_dir) if
-                 os.path.isfile(os.path.join(active_dir, f)) and
-                 f.endswith(f"{suffix}.csv")]
+        if stage == "processing":
+            file_list = [f for f in
+                     os.listdir(active_dir) if
+                     os.path.isfile(os.path.join(active_dir, f)) and
+                     f.endswith(f"{suffix}.csv")]
+        elif stage == "consolidating":
+            file_list = [f for f in session_dict]
     except OSError:
         print(f"Your entry [{active_dir}] wasn't recognized as a valid " +
                 "directory. Please try again!")
@@ -109,7 +112,8 @@ def get_dir_and_file(stage):
     if stage=="consolidating":
         print("Please provide the name of the .csv file to which these files " +
             "should be appended. (No file extension needed.)")
-        target_file = input("\t >>: ") + ".csv"
+        #target_file = input("\t >>: ") + ".csv"
+        target_file = active_dir + input("\t >>: ") + ".csv"
     elif stage=="processing":
         target_file = None
     exit_mbpc() if confirmation == "q" else confirmation
@@ -332,6 +336,7 @@ def stack_mbpr(dict_of_files, target_file):
     """ Function to import Mpesa Bulk Payment Report .CSV, re-order the
         columns, and store in a dataframe for later stacking.
     """
+    print(f"In the stacker, targeting: {target_file}")
     counter = 0
     for mbpr in session_dict:
         with open(target_file, 'a', newline="") as new_file, open(mbpr, 'r') as main_file:
